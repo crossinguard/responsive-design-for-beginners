@@ -1,9 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/hero/Hero.astro';
 
 const title = 'Responsive Design for Beginners';
 ---
 
 <BaseLayout title={title}>
   <h1 class="sr-only">{title}</h1>
+  <Hero />
 </BaseLayout>

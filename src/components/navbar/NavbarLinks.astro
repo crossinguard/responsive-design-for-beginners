@@ -35,7 +35,8 @@ const links: Link[] = [
 <style>
   .link-list {
     display: flex;
-    gap: 2.5rem;
+    gap: 1.25rem;
+    gap: clamp(1.25rem, 0.6818rem + 2.4242vi, 2.5rem);
     margin-block: 0.9375rem;
     margin-block: clamp(0.9375rem, 0.5114rem + 1.8182vi, 1.875rem);
   }
