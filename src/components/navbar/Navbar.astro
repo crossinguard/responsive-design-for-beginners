@@ -1,0 +1,28 @@
+---
+import NavbarLogo from './NavbarLogo.astro';
+import NavbarLinks from '../navbar/NavbarLinks.astro';
+---
+
+<header>
+  <nav>
+    <NavbarLogo />
+    <NavbarLinks />
+  </nav>
+</header>
+
+<style>
+  header {
+    background-color: var(--blue);
+  }
+  nav {
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 75rem;
+  }
+  .logo {
+    height: 1.25rem;
+    height: clamp(1.25rem, 0.7955rem + 1.9394vi, 2.25rem);
+    width: auto;
+  }
+</style>

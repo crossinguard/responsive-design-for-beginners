@@ -1,0 +1,17 @@
+---
+import { Image } from 'astro:assets';
+
+import logo from '../../assets/images/logo-mythos.svg';
+---
+
+<div class="center">
+  <Image src={logo} alt="Mythos" class="logo" />
+</div>
+
+<style>
+  .logo {
+    height: 1.25rem;
+    height: clamp(1.25rem, 0.7955rem + 1.9394vi, 2.25rem);
+    width: auto;
+  }
+</style>

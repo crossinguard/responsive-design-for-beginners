@@ -1,0 +1,55 @@
+---
+interface Link {
+  label: string;
+  link: string;
+}
+
+const links: Link[] = [
+  {
+    label: 'Features',
+    link: '#',
+  },
+  {
+    label: 'Pricing',
+    link: '#',
+  },
+  {
+    label: 'About',
+    link: '#',
+  },
+];
+---
+
+<ul class="link-list">
+  {
+    links.map((link) => (
+      <li>
+        <a href={link.link} class="link">
+          {link.label}
+        </a>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .link-list {
+    display: flex;
+    gap: 2.5rem;
+    margin-block: 0.9375rem;
+    margin-block: clamp(0.9375rem, 0.5114rem + 1.8182vi, 1.875rem);
+  }
+  .link {
+    color: var(--white);
+    font-weight: 700;
+    transition: all var(--transition);
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-size: clamp(0.875rem, 0.8182rem + 0.2424vi, 1rem);
+  }
+  li {
+    line-height: 1rem;
+  }
+  .link:hover {
+  }
+</style>
